@@ -1,5 +1,5 @@
 #loginImg{
-    height: 40%;
+    height: 25%;
 }
 #username{
     width: 224px;
@@ -8,4 +8,11 @@
 .loginInputs{
     border:none !important;
     border-bottom: 1px solid #cacaca !important;
+    border-radius: 0px !important;
+}
+.loginInputs:focus{
+    border:none !important;
+    border-bottom: 2px solid #80bdff !important;
+    box-shadow: none !important;
+    
 }

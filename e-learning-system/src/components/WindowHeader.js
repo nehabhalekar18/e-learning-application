@@ -14,7 +14,7 @@ class WindowHeader extends Component {
           <Col lg={11}>
             <p id="windowTitle">E-Learning System</p>
           </Col>
-          <Col lg={1}>
+          <Col lg={1} style={{textAlign:'right'}}>
             <MinimizeOutlined fontSize="small" />
             <CropDinOutlined fontSize="small" />
             <CloseOutlined fontSize="small" />
