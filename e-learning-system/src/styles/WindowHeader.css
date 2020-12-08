@@ -1,0 +1,10 @@
+#windowHeader{
+    border-bottom:1px solid #ccaacc;
+    height:24px;
+    padding: 0 5px;
+}
+#windowTitle{
+    padding: 0 1%;
+    font-size: 12px;
+    font-weight: 700;
+}

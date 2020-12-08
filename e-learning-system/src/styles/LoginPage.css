@@ -1,0 +1,11 @@
+#loginImg{
+    height: 40%;
+}
+#username{
+    width: 224px;
+    
+}
+.loginInputs{
+    border:none !important;
+    border-bottom: 1px solid #cacaca !important;
+}
