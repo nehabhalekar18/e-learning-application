@@ -1,5 +1,5 @@
 import { Nav } from "react-bootstrap";
-import "../styles/SideNav.css";
+//import "../styles/SideNav.css";
 import React, { Component } from 'react';
 class  SideNav extends Component {
     state = {  }

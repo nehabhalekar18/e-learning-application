@@ -1,0 +1,11 @@
+#file-page-container{
+    background-color: rgba(196, 196, 196, 0.2);
+    height: 100%;
+}
+#file-data-div{
+    background: #ffffff;
+    padding:5%;
+    height: 350px;
+    margin-bottom: 5%;
+    overflow-x: auto;
+}
