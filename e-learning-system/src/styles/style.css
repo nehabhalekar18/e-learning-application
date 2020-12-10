@@ -1,0 +1,12 @@
+.pageTitle{
+    margin:0px;
+}
+#file-list-div{
+    margin-top: 3%;
+    border: 1px solid #c4c4c4;
+    padding: 1% 2%;
+    border-radius: 4px;
+}
+.breadcrumb{
+    background-color: transparent !important;
+}

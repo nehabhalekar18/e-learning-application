@@ -1,0 +1,10 @@
+.searchCust .form-control{
+    min-width: -webkit-fill-available !important;
+}
+#zoom-dropdown > .btn-primary{
+    background-color: transparent;
+    border:none;
+    outline: none;
+    box-shadow: none;
+    color: black;
+}
