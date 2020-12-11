@@ -1,10 +1,26 @@
-.searchCust .form-control{
-    min-width: -webkit-fill-available !important;
+.searchCust .form-control {
+  min-width: -webkit-fill-available !important;
 }
-#zoom-dropdown > .btn-primary{
-    background-color: transparent;
-    border:none;
-    outline: none;
-    box-shadow: none;
-    color: black;
+.searchCust {
+  padding-top: 8px;
+}
+#zoom-dropdown {
+  height: 24px;
+}
+#zoom-dropdown > .btn-primary {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+#searchHeader {
+  margin: 0;
+  height: 64px;
+  min-width: -webkit-fill-available;
+  border-bottom: 1px solid #ffffff;
+}
+#searchHeader > .row > [class^="col-"] {
+  display: block;
+  text-align: center;
+  padding-top: 5px;
 }

@@ -1,12 +1,19 @@
-.pageTitle{
-    margin:0px;
+.pageTitle {
+  margin: 0px;
 }
-#file-list-div{
-    margin-top: 3%;
-    border: 1px solid #c4c4c4;
-    padding: 1% 2%;
-    border-radius: 4px;
+#file-list-div {
+  margin-top: 3%;
+  border: 1px solid #c4c4c4;
+  padding: 1% 2%;
+  border-radius: 4px;
 }
-.breadcrumb{
-    background-color: transparent !important;
+.breadcrumb {
+  background-color: transparent !important;
+}
+.theme-red {
+  color: red !important;
+  background-color: black;
+}
+.theme-red-text{
+    color: #ffffff;
 }

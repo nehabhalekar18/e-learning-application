@@ -1,0 +1,31 @@
+#home-page-container {
+  margin: 0px;
+  min-width: -webkit-fill-available;
+  height: 100vh;
+}
+#home-page-container > .row {
+  height: inherit;
+}
+#left-section {
+  background-color: black;
+}
+#home-page-heading {
+  margin: 8%;
+}
+#home-page-reader {
+  margin: 7%;
+}
+#home-page-continue {
+  float: right;
+}
+#continue-btn {
+  padding-top: 18%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+#mic-icon {
+  font-size: 88px;
+  padding: 14px;
+  border-radius: 50%;
+}

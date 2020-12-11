@@ -4,12 +4,14 @@ import Login from "./pages/LoginPage"
 import StudyMaterial from "./pages/StudyMaterialPage";
 import LayoutComponent from "./components/LayoutComponent"
 import StudyMaterialFilePage from "./pages/StudyMaterialFilePage"
+import HomePage from "./pages/HomePage"
 class Routes extends Component {
   render() {
     return (
       <Router>
-        <Route path="/" exact component={Login}></Route>
         <Switch>
+        <Route path="/" exact component={HomePage}></Route>
+        <Route path="/login" exact component={Login}></Route>
           <LayoutComponent>
           <Route
             exact
