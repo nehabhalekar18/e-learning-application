@@ -1,0 +1,7 @@
+#breadcrumb-row > [class^="col-"]{
+    max-width:fit-content;
+    padding:0px 5px;
+}
+#breadcrumb-row > [class^="col-"] > a{
+    color: #000000;
+}

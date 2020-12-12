@@ -6,7 +6,9 @@ import {
   FormControl,
   InputGroup,
   Row,
+  Button,
 } from "react-bootstrap";
+import {Link} from 'react-router-dom'
 import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import VisibilityOffOutlinedIcon from "@material-ui/icons/VisibilityOffOutlined";
@@ -44,7 +46,7 @@ class HomePage extends Component {
                   </InputGroup.Text>
                 </InputGroup.Prepend>
                 <FormControl
-                id="password-input"
+                  id="password-input"
                   placeholder="Password"
                   aria-label="Password"
                   aria-describedby="Password"
@@ -55,6 +57,9 @@ class HomePage extends Component {
                   </InputGroup.Text>
                 </InputGroup.Append>
               </InputGroup>
+              <Link to="/dashboard">
+                <Button>Sign In</Button>
+              </Link>
             </div>
           </Col>
         </Row>

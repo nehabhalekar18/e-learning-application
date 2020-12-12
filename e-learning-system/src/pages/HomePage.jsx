@@ -18,7 +18,7 @@ class HomePage extends Component {
               <i>for voice commands</i>
             </div>
             <div id="home-page-mic">
-              <MicOffIcon id="mic-icon"  className=" theme-red"/>
+              <MicOffIcon id="mic-icon" className="theme-red-icon theme-red" />
               <h6>Turn On</h6>
             </div>
             <div id="home-page-reader">
@@ -28,8 +28,8 @@ class HomePage extends Component {
             </div>
             <div id="home-page-continue">
               <Link to="/login">
-                <div id="continue-btn" className=" theme-red">
-                  <NavigateNextIcon />
+                <div id="continue-btn" className="theme-red">
+                  <NavigateNextIcon className="theme-red-icon" />
                 </div>
               </Link>
               <small>Continue</small>

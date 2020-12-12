@@ -1,12 +1,23 @@
-#side-nav{
-    height: 100vh;
-    width: 208px;
+#side-nav {
+  min-height: 89.8vh;
+  max-height: 100vh;
+  width: 208px;
+  padding: 0;
 }
-.nav-link:active, .nav-link:focus,.nav-link:hover{
-    color: white !important;
-    background-color: red;
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  color: white !important;
+  background-color: red;
+  border-bottom: 2px solid #ffffff;
 }
-.nav-link:hover > .MuiSvgIcon-root,.nav-link:focus > .MuiSvgIcon-root{
-    color: #ffffff !important;
-    background-color:transparent;
+.nav-link:hover > .MuiSvgIcon-root,
+.nav-link:focus > .MuiSvgIcon-root {
+  color: #ffffff !important;
+  background-color: transparent;
+}
+.nav-link {
+  color: #ffffff !important;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
 }

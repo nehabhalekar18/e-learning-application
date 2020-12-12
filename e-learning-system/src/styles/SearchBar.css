@@ -17,7 +17,7 @@
   margin: 0;
   height: 64px;
   min-width: -webkit-fill-available;
-  border-bottom: 1px solid #ffffff;
+  /* border-bottom: 1px solid #ffffff; */
 }
 #searchHeader > .row > [class^="col-"] {
   display: block;

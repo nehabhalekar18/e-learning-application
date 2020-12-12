@@ -18,15 +18,15 @@ class SearchBar extends Component {
       <Container id="searchHeader" className="theme-red">
         <Row>
           <Col xs={1}>
-            <h1 className="theme-red">V</h1>
+            <h1 className="theme-red-icon">V</h1>
           </Col>
           <Col xs={1}>
-            <h5 className="theme-red-text">Welcome Steffi</h5>
+            <h5>Welcome Steffi</h5>
           </Col>
           <Col xs={1}>
-            <MicOutlinedIcon className="theme-red" />
+            <MicOutlinedIcon className="theme-red-icon" />
             <br />
-            <small className="theme-red-text">Mic On</small>
+            <small>Mic On</small>
           </Col>
           <Col xs={6} style={{ maxWidth: "inherit" }}>
             <Form inline className="searchCust">
@@ -35,13 +35,13 @@ class SearchBar extends Component {
           </Col>
           <Col xs={1}>
             <Form.Check type="switch" id="custom-switch" />
-            <small className="theme-red-text">Reader Off</small>
+            <small>Reader Off</small>
           </Col>
           <Col xs={1}>
             <Dropdown id="zoom-dropdown">
               <Dropdown.Toggle
                 id="dropdown-basic"
-                className="theme-red"
+                className="theme-red-icon"
                 size="sm"
               >
                 50%
@@ -52,11 +52,11 @@ class SearchBar extends Component {
                 <Dropdown.Item href="#/action-3">75%</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <small className="theme-red-text">Font Size</small>
+            <small>Font Size</small>
           </Col>
           <Col xs={1}>
-            <Notifications className="theme-red" />
-            <small className="theme-red-text">Notifications</small>
+            <Notifications className="theme-red-icon" />
+            <small>Notifications</small>
           </Col>
         </Row>
       </Container>

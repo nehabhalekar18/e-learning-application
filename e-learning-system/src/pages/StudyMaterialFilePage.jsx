@@ -1,20 +1,16 @@
 import React, { Component } from "react";
 import { Breadcrumb, Col, Container, Row } from "react-bootstrap";
 import {Link} from 'react-router-dom';
+import BreadcrumbComponent from "../components/BreadcrumbComponent"
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import "../styles/style.css";
 import "../styles/StudyMaterialFilePage.css";
 class StudyMaterialFilePage extends Component {
   render() {
     return (
-      <Container id="file-page-container">
-        <Row>
-          <Col xs={12}>
-            <Breadcrumb>
-              <Breadcrumb.Item href="#">Subject</Breadcrumb.Item>
-              <Breadcrumb.Item active>File Name</Breadcrumb.Item>
-            </Breadcrumb>
-          </Col>
-        </Row>
+      <Container className="contentContainer" id="file-page-container">
+        <BreadcrumbComponent/>
+        <br/>
         <Row>
           <Col xs={{ span: 8, offset: 2 }}>
             <div id="file-data-div">
@@ -23,11 +19,9 @@ class StudyMaterialFilePage extends Component {
               people with backgrounds, goals, and values<br/><br/><b> Benefits of Personas</b><br/> Personas help to focus decisions surrounding site components by adding a layer of real-world consideration to the conversation. They also offer a quick and inexpensive way to test and prioritize those features throughout the development process. In addition they can help:<br/><br/> You may develop one or more personas for a project but limit yourself to the main audiences for the site. For any given project, creating only three or four personas is best. Remember that it is better to paint with a broad brush and meet the needs of the larger populations than try to meet the needs of everyone. The goal of personas is not represent all audiences or address all needs of the website but instead to focus on the major needs of the most important user groups.
             </div>
           </Col>
-        </Row>
-        <Row>
-            <Col xs={12}>
-                <Link to='/study-material' style={{marginBottom:'5%'}}>
-                    Go Back
+            <Col xs={2} style={{paddingTop:'18%'}}>
+                <Link to='/study-material'>
+                  <span style={{display:'inline-flex'}}>  Usecase Scenario.pdf <ArrowForwardIosIcon/></span>
                 </Link>
             </Col>
         </Row>

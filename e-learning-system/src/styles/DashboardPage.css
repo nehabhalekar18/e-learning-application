@@ -1,0 +1,10 @@
+.subjectCard {
+  text-align: center;
+}
+.subjectCard > .card-body {
+  padding: 18% 0;
+}
+.subjectCard:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+}

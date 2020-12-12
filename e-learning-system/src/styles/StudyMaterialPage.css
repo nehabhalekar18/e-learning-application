@@ -1,0 +1,5 @@
+#study-material-table > tbody > tr:hover{
+cursor: pointer;
+transform: scale(1.01,1.01);
+
+}

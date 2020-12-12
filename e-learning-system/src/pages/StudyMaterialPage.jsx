@@ -1,21 +1,34 @@
+import React, { Component } from "react";
+import { Col, Container, Row, Table } from "react-bootstrap";
+import { Redirect } from "react-router-dom";
 import DescriptionOutlinedIcon from "@material-ui/icons/DescriptionOutlined";
 import FolderOpenIcon from "@material-ui/icons/FolderOpen";
-import React, { Component } from "react";
-import {Link} from 'react-router-dom'
-import { Col, Container, Row, Table } from "react-bootstrap";
+import "../styles/StudyMaterialPage.css"
 import "../styles/style.css";
 class StudyMaterial extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      openFile: false,
+    };
+    this.openFile = this.openFile.bind(this);
+  }
+  openFile = (e) => {
+    console.log(e)
+    this.setState({ openFile: true });
+  };
   render() {
     return (
-      <Container>
+      <Container className="contentContainer">
+        {this.state.openFile ? <Redirect to="/study-material/sub" /> : null}
         <Row>
           <Col xs={12}>
-            <h4 className="pageTitle">Subject from dashboard</h4>
+            <h4 className="pageTitle">UI/UX Implementation</h4>
             <small>5 Files</small>
           </Col>
         </Row>
         <div id="file-list-div">
-          <Table responsive="sm">
+          <Table responsive="sm" id="study-material-table">
             <thead>
               <tr>
                 <th>Name</th>
@@ -25,10 +38,10 @@ class StudyMaterial extends Component {
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr onClick={this.openFile}>
                 <td>
                   <FolderOpenIcon />
-                  &nbsp;File 1
+                  &nbsp;Design Thinking
                 </td>
                 <td>10-12-2020 12:22</td>
                 <td>Folder</td>
@@ -37,7 +50,7 @@ class StudyMaterial extends Component {
               <tr>
                 <td>
                   <FolderOpenIcon />
-                  &nbsp;File 1
+                  &nbsp;Persona
                 </td>
                 <td>08-12-2020 14:15</td>
                 <td>Folder</td>
@@ -46,23 +59,21 @@ class StudyMaterial extends Component {
               <tr>
                 <td>
                   <FolderOpenIcon />
-                  &nbsp;File 1
+                  &nbsp;Ideate
                 </td>
                 <td>06-12-2020 18:06</td>
                 <td>Folder</td>
                 <td>3</td>
               </tr>
-              <tr>
-                  <Link to='/study-material/file'>
-                <td>
+              {/* <tr>
+                <td onClick={this.openFile}>
                   <DescriptionOutlinedIcon />
-                  &nbsp;File 1.pdf
+                  &nbsp;Activity.pdf
                 </td>
-                </Link>
                 <td>06-12-2020 18:06</td>
                 <td>File</td>
                 <td>-</td>
-              </tr>
+              </tr> */}
             </tbody>
           </Table>
         </div>

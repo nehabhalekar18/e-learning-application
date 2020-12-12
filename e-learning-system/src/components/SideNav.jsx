@@ -13,28 +13,24 @@ class SideNav extends Component {
     return (
       <Container id="side-nav" className="theme-red">
         <Nav defaultActiveKey="/home" className="flex-column">
-          <Nav.Link href="/study-material" className="theme-red">
-            <DashboardIcon className="theme-red" />
+          <Nav.Link href="/dashboard">
+            <DashboardIcon className="theme-red-icon" />
             &nbsp; Dashboard
           </Nav.Link>
-          <Nav.Link eventKey="link-1" className="theme-red">
-            <VideoLibraryIcon className="theme-red" />
+          <Nav.Link eventKey="link-1">
+            <VideoLibraryIcon className="theme-red-icon" />
             &nbsp; Lectures
           </Nav.Link>
-          <Nav.Link
-            href="/study-material"
-            eventKey="link-2"
-            className="theme-red"
-          >
-            <MenuBookIcon className="theme-red" />
+          <Nav.Link href="/study-material" eventKey="link-2">
+            <MenuBookIcon className="theme-red-icon" />
             &nbsp; Study Materials
           </Nav.Link>
-          <Nav.Link eventKey="link-1" className="theme-red">
-            <AssignmentIcon className="theme-red" />
+          <Nav.Link eventKey="link-1">
+            <AssignmentIcon className="theme-red-icon" />
             &nbsp; Assignments
           </Nav.Link>
-          <Nav.Link eventKey="link-2" className="theme-red">
-            <ReceiptIcon className="theme-red" />
+          <Nav.Link eventKey="link-2">
+            <ReceiptIcon className="theme-red-icon" />
             &nbsp; Exams
           </Nav.Link>
         </Nav>
