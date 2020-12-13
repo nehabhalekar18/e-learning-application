@@ -6,9 +6,12 @@
 }
 .nav-link:active,
 .nav-link:focus,
+.theme-red-icon:active,
+.theme-red-icon:focus,
 .nav-link:hover {
-  color: white !important;
-  background-color: red;
+  color: blue !important;
+  font-weight: bold;
+  background-color: white;
   border-bottom: 2px solid #ffffff;
 }
 .nav-link:hover > .MuiSvgIcon-root,

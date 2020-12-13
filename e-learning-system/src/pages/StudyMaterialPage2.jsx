@@ -1,11 +1,14 @@
 import DescriptionOutlinedIcon from "@material-ui/icons/DescriptionOutlined";
 import React, { Component } from "react";
-import { Container, Table } from "react-bootstrap";
+import { Button, Container, Table } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import BreadcrumbComponent from "../components/BreadcrumbComponent";
 import "../styles/StudyMaterialPage.css";
 import "../styles/style.css";
 class StudyMaterialPage2 extends Component {
+  componentWillMount() {
+    document.title = "There are 2 files under Persona Folder. ";
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -36,19 +39,19 @@ class StudyMaterialPage2 extends Component {
               <tr onClick={this.openFile}>
                 <td>
                   <DescriptionOutlinedIcon />
-                  &nbsp;Persona Template
+                  &nbsp; <Button  tabindex="0" aria-label="Persona Template.pdf" class= "smListButton" id="bootstrap-overrides"> Persona Template</Button>
                 </td>
                 <td>10-12-2020 12:22</td>
                 <td>File</td>
                 <td>2</td>
               </tr>
-              <tr>
+              <tr tabindex="0" aria-label="Persona tips.pdf">
                 <td>
                   <DescriptionOutlinedIcon />
-                  &nbsp;Persona 2
+                  &nbsp;Persona Tips and Tricks
                 </td>
                 <td>08-12-2020 14:15</td>
-                <td>Fille</td>
+                <td>File</td>
                 <td>2</td>
               </tr>
             </tbody>

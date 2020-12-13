@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-import { Col, Container, Row, Table } from "react-bootstrap";
+import { Button, Col, Container, Row, Table } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import DescriptionOutlinedIcon from "@material-ui/icons/DescriptionOutlined";
 import FolderOpenIcon from "@material-ui/icons/FolderOpen";
 import "../styles/StudyMaterialPage.css"
 import "../styles/style.css";
 class StudyMaterial extends Component {
+  componentWillMount() {
+    document.title = "Your are on Study Material page, there are 3 folders under UI UX implementation subject.";
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -41,13 +44,13 @@ class StudyMaterial extends Component {
               <tr onClick={this.openFile}>
                 <td>
                   <FolderOpenIcon />
-                  &nbsp;Design Thinking
+                  &nbsp;<Button class="btn-ds" tabindex="0" aria-label="Design Thinking folder" id="bootstrap-overrides">Design Thinking</Button>
                 </td>
                 <td>10-12-2020 12:22</td>
                 <td>Folder</td>
                 <td>2</td>
               </tr>
-              <tr>
+              <tr tabindex="0" aria-label="Persona folder">
                 <td>
                   <FolderOpenIcon />
                   &nbsp;Persona
@@ -56,7 +59,7 @@ class StudyMaterial extends Component {
                 <td>Folder</td>
                 <td>2</td>
               </tr>
-              <tr>
+              <tr tabindex="0" aria-label="Ideate folder">
                 <td>
                   <FolderOpenIcon />
                   &nbsp;Ideate

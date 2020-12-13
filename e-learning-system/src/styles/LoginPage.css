@@ -1,36 +1,60 @@
-#loginImg{
-    height: 25%;
+#loginImg {
+  height: 25%;
 }
-#username{
-    width: 224px;
-    
+#username {
+  width: 224px;
 }
-.loginInputs{
-    border:none !important;
-    border-bottom: 1px solid #cacaca !important;
-    border-radius: 0px !important;
+.loginInputs {
+  border: none !important;
+  border-bottom: 1px solid #cacaca !important;
+  border-radius: 0px !important;
 }
-.loginInputs:focus{
-    border:none !important;
-    border-bottom: 2px solid #80bdff !important;
-    box-shadow: none !important;
-    
+.loginInputs:focus {
+  border: none !important;
+  border-bottom: 2px solid #80bdff !important;
+  box-shadow: none !important;
 }
-#login-div{
-    width: 450px;
-    margin:auto;
-    padding:2% 5%;
-    border:1px solid #c4c4c4;
-    border-radius: 4px;
+#login-div {
+  width: 450px;
+  margin: auto;
+  padding: 2% 5%;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
 }
-.input-group-text{
-    background: #000000 !important;
-    border-radius: 0px !important;
-    border: none !important;
+.input-group-text {
+  background: #000000 !important;
+  border-radius: 0px !important;
+  border: none !important;
 }
-.input-group-prepend > input{
-    border-radius: 0px;
+.input-group-prepend > input {
+  border-radius: 0px;
 }
-#user-icon{
-    color:#ffffff;
+.eyeIcon {
+  color: #fff !important;
+}
+#user-icon {
+  color: #ffffff;
+}
+
+.inline-errormsg {
+  color: red;
+  font-size: 12px;
+}
+form {
+  padding: 10px;
+}
+.hidden {
+  display: none;
+}
+
+label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-align: left;
+  float: left;
+}
+.btn {
+  margin-top: 40px;
+  background-color: #0000cc;
 }

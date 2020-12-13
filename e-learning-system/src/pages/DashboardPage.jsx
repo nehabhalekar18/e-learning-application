@@ -6,6 +6,9 @@ import HelpComponent from "../components/HelpComponent";
 import "../styles/DashboardPage.css";
 import "../styles/style.css";
 class DashboardPage extends Component {
+  componentWillMount() {
+    document.title = "Welcome Steffy, You are on Dashboard Page";
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -27,7 +30,7 @@ class DashboardPage extends Component {
           ) : null}
           <Row>
             <Col xs={12}>
-              <h4 className="pageTitle">Dashboard</h4>
+              <h4 className="pageTitle"  tabindex="0" aria-label="5 subjects are listed." >Dashboard</h4>
               <small>5 Subject</small>
             </Col>
           </Row>
@@ -35,7 +38,7 @@ class DashboardPage extends Component {
           <br />
           <Row>
             <Col xs="4">
-              <Card className="subjectCard" onClick={this.setSubject}>
+              <Card className="subjectCard"  tabindex="0" onClick={this.setSubject} aria-label="Subject 1. UI/UX Implementations">
                 <Card.Body>
                   <Card.Title>UI/UX Implementation</Card.Title>
                   <Card.Text>
@@ -45,7 +48,7 @@ class DashboardPage extends Component {
               </Card>
             </Col>
             <Col xs="4">
-              <Card className="subjectCard">
+              <Card className="subjectCard"  tabindex="0" aria-label="Subject 2. Information Systems">
                 <Card.Body>
                   <Card.Title>Information Systems</Card.Title>
                   <Card.Text>
@@ -55,7 +58,7 @@ class DashboardPage extends Component {
               </Card>
             </Col>
             <Col xs="4">
-              <Card className="subjectCard">
+              <Card className="subjectCard"  tabindex="0" aria-label="Subject 3. Usability Testing">
                 <Card.Body>
                   <Card.Title>Usability Testing</Card.Title>
                   <Card.Text>
@@ -68,7 +71,7 @@ class DashboardPage extends Component {
           <br />
           <Row>
             <Col xs="4">
-              <Card className="subjectCard">
+              <Card className="subjectCard"  tabindex="0"  aria-label="Subject 4. Network Security">
                 <Card.Body>
                   <Card.Title>Network Security</Card.Title>
                   <Card.Text>
@@ -78,7 +81,7 @@ class DashboardPage extends Component {
               </Card>
             </Col>
             <Col xs="4">
-              <Card className="subjectCard">
+              <Card className="subjectCard"  tabindex="0"  aria-label="Last Subject. Advance Database">
                 <Card.Body>
                   <Card.Title>Advance Database</Card.Title>
                   <Card.Text>

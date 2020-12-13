@@ -1,5 +1,11 @@
-#study-material-table > tbody > tr:hover{
-cursor: pointer;
-transform: scale(1.01,1.01);
+#study-material-table > tbody > tr:hover {
+  cursor: pointer;
+  transform: scale(1.01, 1.01);
+  color: blue;
+}
 
+#bootstrap-overrides {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
 }
