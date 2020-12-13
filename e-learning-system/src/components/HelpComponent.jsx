@@ -7,7 +7,7 @@ class HelpComponent extends Component {
     return (
       <Container id="help-button-container">
         <span style={{ position: "fixed" }}>
-          <Button className="theme-red-icon theme-red" id="help-button">
+          <Button aria-label = "Press Enter for assistance" className="theme-white-icon theme-white" id="help-button">
             ?
           </Button>
           <h6>Help</h6>
