@@ -3,11 +3,13 @@ import { Button, Col, Container, Row, Table } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import DescriptionOutlinedIcon from "@material-ui/icons/DescriptionOutlined";
 import FolderOpenIcon from "@material-ui/icons/FolderOpen";
-import "../styles/StudyMaterialPage.css"
+import "../styles/StudyMaterialPage.css";
 import "../styles/style.css";
+import HelpComponent from "../components/HelpComponent";
 class StudyMaterial extends Component {
   componentWillMount() {
-    document.title = "Your are on Study Material page, there are 3 folders under UI UX implementation subject.";
+    document.title =
+      "Your are on Study Material page, there are 3 folders under UI UX implementation subject.";
   }
   constructor(props) {
     super(props);
@@ -17,12 +19,13 @@ class StudyMaterial extends Component {
     this.openFile = this.openFile.bind(this);
   }
   openFile = (e) => {
-    console.log(e)
+    console.log(e);
     this.setState({ openFile: true });
   };
   render() {
     return (
       <Container className="contentContainer">
+        <HelpComponent />
         {this.state.openFile ? <Redirect to="/study-material/sub" /> : null}
         <Row>
           <Col xs={12}>
@@ -30,7 +33,9 @@ class StudyMaterial extends Component {
             <small>5 Files</small>
           </Col>
         </Row>
-        <div id="file-list-div">
+        <Row>
+          <Col xs="12">
+          <div id="file-list-div">
           <Table responsive="sm" id="study-material-table">
             <thead>
               <tr>
@@ -44,7 +49,15 @@ class StudyMaterial extends Component {
               <tr onClick={this.openFile}>
                 <td>
                   <FolderOpenIcon />
-                  &nbsp;<Button class="btn-ds" tabindex="0" aria-label="Design Thinking folder" id="bootstrap-overrides">Design Thinking</Button>
+                  &nbsp;
+                  <Button
+                    class="btn-ds"
+                    tabindex="0"
+                    aria-label="Design Thinking folder"
+                    id="bootstrap-overrides"
+                  >
+                    Design Thinking
+                  </Button>
                 </td>
                 <td>10-12-2020 12:22</td>
                 <td>Folder</td>
@@ -80,6 +93,9 @@ class StudyMaterial extends Component {
             </tbody>
           </Table>
         </div>
+            </Col>
+        </Row>
+        
       </Container>
     );
   }

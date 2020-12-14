@@ -1,8 +1,9 @@
 #help-button-container {
   width: fit-content;
   position: absolute;
-  margin: -7% 84%;
+  margin: 376px 87%;
   text-align: center;
+  float: right;
 }
 #help-button {
   border-radius: 50%;
@@ -13,4 +14,20 @@
 }
 .theme-white-icon {
   background-color: black;
+}
+@media only screen and (min-width: 1600px) {
+  #help-button-container {
+    width: fit-content;
+    position: absolute;
+    margin: 376px 87%;
+    text-align: center;
+    float: right;
+  }
+  #help-button {
+    border-radius: 50%;
+    height: 62px;
+    width: 62px;
+    font-size: 30px;
+    font-weight: 500;
+  }
 }

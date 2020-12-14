@@ -14,8 +14,8 @@ class LayoutComponent extends Component {
           </Col>
           <Col xs={10}>{this.props.children}</Col>
         </Row>
-        <Row><Col>
-        <HelpComponent/></Col></Row>
+        {/* <Row><Col>
+        <HelpComponent/></Col></Row> */}
       </Fragment>
     );
   }

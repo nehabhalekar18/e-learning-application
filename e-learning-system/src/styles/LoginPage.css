@@ -21,14 +21,14 @@
   border: 1px solid #c4c4c4;
   border-radius: 4px;
 }
-.input-group-text {
+/* .input-group-text {
   background: #000000 !important;
   border-radius: 0px !important;
   border: none !important;
 }
 .input-group-prepend > input {
   border-radius: 0px;
-}
+} */
 .eyeIcon {
   color: #fff !important;
 }
@@ -39,6 +39,10 @@
 .inline-errormsg {
   color: red;
   font-size: 12px;
+}
+.is-invalid{
+  border: 1px solid red;
+  border-radius: 4px;
 }
 form {
   padding: 10px;
@@ -55,6 +59,10 @@ label {
   float: left;
 }
 .btn {
-  margin-top: 40px;
+ /*  margin-top: 40px; */
   background-color: #0000cc;
+  width: inherit;
+}
+#forgot-pswd-col{
+  padding: 9px 15px;
 }

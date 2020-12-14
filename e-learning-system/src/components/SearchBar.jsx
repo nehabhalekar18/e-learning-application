@@ -26,7 +26,9 @@ class SearchBar extends Component {
           <Col xs={1}>
             <MicOutlinedIcon className="theme-white-icon" />
             <br />
-            <small tabindex="0" aria-label="Mic On">Mic On</small>
+            <small tabindex="0" aria-label="Mic On">
+              Mic On
+            </small>
           </Col>
           <Col xs={6} style={{ maxWidth: "inherit" }}>
             <Form inline className="searchCust" aria-label="Search a subject">
@@ -34,29 +36,60 @@ class SearchBar extends Component {
             </Form>
           </Col>
           <Col xs={1}>
-            <Form.Check type="switch" id="custom-switch" />
-            <small tabindex="0" aria-label="Screen Reader On">Reader Off</small>
+            <Row>
+              <Col xs={12}>
+                <Form.Check type="switch" id="custom-switch" />
+              </Col>
+              <Col xs={12}>
+                <small tabindex="0" aria-label="Screen Reader On">
+                  Reader Off
+                </small>
+              </Col>
+            </Row>
           </Col>
           <Col xs={1}>
-            <Dropdown id="zoom-dropdown" >
+            <Dropdown id="zoom-dropdown">
               <Dropdown.Toggle
                 id="dropdown-basic"
                 className="theme-white-icon"
                 size="sm"
-                tabindex="0" aria-label="Font size 50%"
+                tabindex="0"
+                aria-label="Font size 50%"
               >
                 50%
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1"  tabindex="0" aria-label="Change to 25%">25%</Dropdown.Item>
-                <Dropdown.Item href="#/action-2" tabindex="0" aria-label="Change to 50%">50%</Dropdown.Item>
-                <Dropdown.Item href="#/action-3" tabindex="0" aria-label="Change to 75%">75%</Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-1"
+                  tabindex="0"
+                  aria-label="Change to 25%"
+                >
+                  25%
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-2"
+                  tabindex="0"
+                  aria-label="Change to 50%"
+                >
+                  50%
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href="#/action-3"
+                  tabindex="0"
+                  aria-label="Change to 75%"
+                >
+                  75%
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <small>Font Size</small>
           </Col>
           <Col xs={1}>
-            <Notifications className="theme-white-icon" tabindex="0" aria-label="No notifications" />
+            <Notifications
+              className="theme-white-icon"
+              tabindex="0"
+              aria-label="No notifications"
+            />
             <small>Notifications</small>
           </Col>
         </Row>

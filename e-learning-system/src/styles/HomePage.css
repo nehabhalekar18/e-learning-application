@@ -11,12 +11,14 @@
 }
 #home-page-heading {
   margin: 8%;
+  text-align: center;
 }
 #home-page-reader {
   margin: 7%;
 }
 #home-page-continue {
   float: right;
+  margin-top: 20%;
 }
 #continue-btn {
   padding-top: 18%;

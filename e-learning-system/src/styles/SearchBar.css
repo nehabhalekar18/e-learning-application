@@ -6,12 +6,14 @@
 }
 #zoom-dropdown {
   height: 24px;
+  margin-top: 3px;
 }
 #zoom-dropdown > .btn-primary {
   background-color: transparent;
   border: none;
   outline: none;
   box-shadow: none;
+  margin-top: 3px;
 }
 #searchHeader {
   margin: 0;
@@ -24,3 +26,13 @@
   text-align: center;
   padding-top: 5px;
 }
+.custom-switch {
+  margin-top: -5px;
+  margin-bottom: 8px;
+  padding-left: 3.25rem;
+}
+/* #reader-off {
+  margin-top: 7px;
+  margin-left: -20px;
+  width: inherit;
+} */

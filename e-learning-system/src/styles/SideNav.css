@@ -16,7 +16,7 @@
 }
 .nav-link:hover > .MuiSvgIcon-root,
 .nav-link:focus > .MuiSvgIcon-root {
-  color: #ffffff !important;
+  color:blue !important;
   background-color: transparent;
 }
 .nav-link {

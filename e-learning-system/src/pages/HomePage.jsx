@@ -1,4 +1,5 @@
 import MicOffIcon from "@material-ui/icons/MicOff";
+import HeadsetIcon from '@material-ui/icons/Headset';
 import NavigateNextIcon from "@material-ui/icons/NavigateNext";
 import React, { Component } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
@@ -30,10 +31,9 @@ class HomePage extends Component {
               <i>Screen reader turned on</i>
             </div>
             <div id="home-page-mic">
-              <MicOffIcon id="mic-icon" className="theme-red-icon theme-red" />
+              <HeadsetIcon id="mic-icon" className="theme-red-icon theme-red" />
               <h6>Turn Off</h6>
-            </div>
-           
+            </div>           
             <div id="home-page-continue">
               <Link to="/login" aria-label="press enter to go on login page">
                 <div id="continue-btn" className="theme-red">
