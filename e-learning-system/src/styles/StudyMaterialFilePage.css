@@ -1,12 +1,6 @@
 #file-page-container{    
     height: 100%;
 }
-#file-data-div{
-    background-color: rgba(196, 196, 196, 0.2);
-    padding:5%;
-    height: 410px;
-    overflow-x: auto;
-}
 .zoom-125{
     font-size: 1.2rem;
 }
@@ -18,4 +12,21 @@
 }
 .zoom-200{
     font-size: 1.8rem;
+}
+#file-page-container {
+  height: 100%;
+}
+#file-data-div {
+  background-color: rgba(196, 196, 196, 0.2);
+  padding: 5%;
+  height: 499px;
+  overflow-x: auto;
+  font-size: 17px;
+}
+.personaImg {
+  margin-left: -3px;
+  margin-top: 10% !important;
+}
+.arrowIcn {
+  padding-top: 20px !;
 }

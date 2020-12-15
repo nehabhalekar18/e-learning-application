@@ -23,13 +23,13 @@ class StudyMaterial extends Component {
   };
   render() {
     return (
-      <Container className="contentContainer">
+      <Container className="contentContainerSm">
         <HelpComponent />
         {this.state.openFile ? <Redirect to="/study-material/sub" /> : null}
         <Row>
           <Col xs={12}>
             <h4 className="pageTitle">UI/UX Implementation</h4>
-            <small>5 Files</small>
+            <label class="subCount">3 files </label>
           </Col>
         </Row>
         <Row>
@@ -41,7 +41,7 @@ class StudyMaterial extends Component {
                 <th>Name</th>
                 <th>Last Modified</th>
                 <th>Type</th>
-                <th>Count</th>
+                <th>Files</th>
               </tr>
             </thead>
             <tbody>
@@ -50,7 +50,7 @@ class StudyMaterial extends Component {
                   <FolderOpenIcon />
                   &nbsp;
                   <Button
-                    class="btn-ds"
+                    class="btnSub"
                     tabindex="0"
                     aria-label="Design Thinking folder"
                     id="bootstrap-overrides"
@@ -65,7 +65,8 @@ class StudyMaterial extends Component {
               <tr tabindex="0" aria-label="Persona folder">
                 <td>
                   <FolderOpenIcon />
-                  &nbsp;Persona
+                  &nbsp;  <Button  class="btnSub" id="bootstrap-overrides"
+                  >Persona </Button>
                 </td>
                 <td>08-12-2020 14:15</td>
                 <td>Folder</td>
@@ -74,7 +75,8 @@ class StudyMaterial extends Component {
               <tr tabindex="0" aria-label="Ideate folder">
                 <td>
                   <FolderOpenIcon />
-                  &nbsp;Ideate
+                  &nbsp; <Button  class="btnSub" id="bootstrap-overrides"
+                  > Ideate</Button>
                 </td>
                 <td>06-12-2020 18:06</td>
                 <td>Folder</td>
