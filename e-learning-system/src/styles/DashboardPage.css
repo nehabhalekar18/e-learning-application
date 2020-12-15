@@ -13,3 +13,9 @@
 .pageTitle {
   color: blue;
 }
+@media (min-width: 700px) {
+  .contentContainer {
+    max-width: 690px;
+    min-width: 690px;
+  }
+}

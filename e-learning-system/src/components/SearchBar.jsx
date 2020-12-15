@@ -11,22 +11,26 @@ import {
 } from "react-bootstrap";
 import "../styles/SearchBar.css";
 import "../styles/style.css";
+import brand from '../assets/brand.png';
+import studentname2 from '../assets/studentname2.png';
 class SearchBar extends Component {
   state = {};
   render() {
     return (
       <Container id="searchHeader" className="theme-red">
-        <Row>
+        <Row class="rowContainer">
           <Col xs={1}>
-            <h1 className="theme-white-icon">V</h1>
+          <img src={brand} alt="Logo" class="imgBrand" />
+
           </Col>
-          <Col xs={1}>
-            <h5>Welcome Steffi</h5>
+      
+          <Col xs={1} >
+         <label className="studName" >Welcome Steffy</label>
           </Col>
-          <Col xs={1}>
-            <MicOutlinedIcon className="theme-white-icon" />
-            <br />
-            <small tabindex="0" aria-label="Mic On">
+          <Col xs={1} >
+            <MicOutlinedIcon className="theme-white-icon micOn" />
+            <br/>
+            <small tabindex="0"  className="fontSize miconFont" aria-label="Mic On">
               Mic On
             </small>
           </Col>
@@ -36,22 +40,16 @@ class SearchBar extends Component {
             </Form>
           </Col>
           <Col xs={1}>
-            <Row>
-              <Col xs={12}>
-                <Form.Check type="switch" id="custom-switch" />
-              </Col>
-              <Col xs={12}>
-                <small tabindex="0" aria-label="Screen Reader On">
+                <Form.Check type="switch" className="custom-switch" />
+                <small tabindex="0" className="fontSize" aria-label="Screen Reader On">
                   Reader Off
                 </small>
-              </Col>
-            </Row>
           </Col>
           <Col xs={1}>
             <Dropdown id="zoom-dropdown">
               <Dropdown.Toggle
                 id="dropdown-basic"
-                className="theme-white-icon"
+                className="theme-white-icon fontSize"
                 size="sm"
                 tabindex="0"
                 aria-label="Font size 50%"
@@ -82,15 +80,15 @@ class SearchBar extends Component {
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <small>Font Size</small>
+            <small className="fontSize">Font Size</small>
           </Col>
           <Col xs={1}>
             <Notifications
-              className="theme-white-icon"
+              className="theme-white-icon notiOn"
               tabindex="0"
               aria-label="No notifications"
-            />
-            <small>Notifications</small>
+            /><br></br>
+            <small className="fontSize" >Notifications</small>
           </Col>
         </Row>
       </Container>

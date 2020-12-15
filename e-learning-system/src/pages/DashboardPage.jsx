@@ -24,6 +24,7 @@ class DashboardPage extends Component {
     return (
       <Fragment>
         <SearchBar />
+        
         <Container className="contentContainer">
           <HelpComponent />
           {this.state.redirect ? (
