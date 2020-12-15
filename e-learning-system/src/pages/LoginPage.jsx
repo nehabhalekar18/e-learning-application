@@ -15,7 +15,8 @@ import VisibilityOffOutlinedIcon from "@material-ui/icons/VisibilityOffOutlined"
 import "../styles/LoginPage.css";
 import "../styles/style.css";
 import Checkbox from "@material-ui/core/Checkbox";
-
+import login from '../assets/login.png';
+import brand from '../assets/brand.png';
 import { Redirect } from "react-router-dom";
 class HomePage extends Component {
   constructor(props) {
@@ -80,14 +81,19 @@ class HomePage extends Component {
     return (
       <Container id="home-page-container" className="container-fluid">
         <Row>
-          <Col xs={4} id="left-section"></Col>
+          <Col xs={4} style={{ textAlign: "center" }} id="left-section">
+          <img src={login} className="imgLogin" />
+          <br></br>
+          <img src={brand} className="brandRow1" /><br></br>
+          <i style={{ color: "white" }}>Your better future is here</i>
+          </Col>
           <Col xs={8}>
             <div id="home-page-heading">
               <h2>Login</h2>
               <i>with your university credentials</i>
             </div>
             <div id="login-div">
-              {/*  <Row>
+                <Row>
                 <Col xs={12}>
                   <label htmlFor="email">Email</label>
                   <InputGroup
@@ -132,6 +138,7 @@ class HomePage extends Component {
                       aria-label=" Enter your Password. Press tab to continue."
                       autoComplete="off"
                       name="firstname"
+                      type="password"
                       value={this.state.firstname}
                       onChange={this.handleInputChange}
                     />
@@ -150,11 +157,12 @@ class HomePage extends Component {
                     Please enter a value
                   </small>
                 </Col>
-                <Col xs={12}>
+               
+                <Col xs={12} className="submitCol">
                   <Button onClick={this.handleSubmit}>Submit</Button>
                 </Col>
               </Row>
-              <Row>
+              <Row className="rememberCol">
                 <Col xs={6}>
                   <Checkbox></Checkbox>
                   Remember me
@@ -163,71 +171,9 @@ class HomePage extends Component {
                   Forgot Password?
                 </Col>
               </Row>
-               */}
-              <form className="row">
-                <div className="col-lg-12 input-container">
-                  <label htmlFor="email">Email</label>
-                  <input
-                    aria-label="Enter E mail ID."
-                    autoComplete="off"
-                    className={
-                      this.hasError("email")
-                        ? "form-control is-invalid"
-                        : "form-control"
-                    }
-                    name="email"
-                    value={this.state.email}
-                    onChange={this.handleInputChange}
-                  />
-
-                  <div
-                    className={
-                      this.hasError("email") ? "inline-errormsg" : "hidden"
-                    }
-                  >
-                    Email is invalid or missing
-                  </div>
-                </div>
-
-                <div className="col-lg-12">
-                  <label htmlFor="firstname">Password</label>
-                  <input
-                    aria-label=" Enter your Password. Press tab to continue."
-                    autoComplete="off"
-                    type="password"
-                    className={
-                      this.hasError("firstname")
-                        ? "form-control is-invalid"
-                        : "form-control"
-                    }
-                    name="firstname"
-                    value={this.state.firstname}
-                    onChange={this.handleInputChange}
-                  />
-                  <div
-                    className={
-                      this.hasError("firstname") ? "inline-errormsg" : "hidden"
-                    }
-                  >
-                    Please enter a value
-                  </div>
-                </div>
-                <br /><br/>
-                <div className="col-lg-12  padd-top">
-                  <Button className="col-lg-12 btn" onClick={this.handleSubmit}>
-                    Submit
-                  </Button>
-                </div>
-              </form>
-              <div className="row submitFooter">
-                <div className="col-lg-6">
-                  <Checkbox></Checkbox>
-                  Remember me
-                </div>
-                <div className="col-lg-6">
-                  <u>Forgot password?</u>
-                </div>
-              </div>
+               
+              
+              
             </div>
           </Col>
         </Row>

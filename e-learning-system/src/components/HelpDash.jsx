@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Container, Button } from "react-bootstrap";
-import "../styles/HelpComponent.css";
+import "../styles/HelpDash.css";
 import "../styles/style.css";
-class HelpComponent extends Component {
+class HelpDash extends Component {
   render() {
     return (
-      <Container id="help-button-container">
+      <Container id="helpdash">
         <span style={{ position: "fixed" }}>
           <Button aria-label = "Press Enter for assistance" className="theme-white-icon hbtnd" id="help-button">
             ?
@@ -16,4 +16,4 @@ class HelpComponent extends Component {
     );
   }
 }
-export default HelpComponent;
+export default HelpDash;

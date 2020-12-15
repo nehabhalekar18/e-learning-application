@@ -5,6 +5,8 @@ import { Redirect } from "react-router-dom";
 import BreadcrumbComponent from "../components/BreadcrumbComponent";
 import "../styles/StudyMaterialPage.css";
 import "../styles/style.css";
+import HelpComponent from "../components/HelpComponent";
+import CropOriginalIcon from '@material-ui/icons/CropOriginal';
 class StudyMaterialPage2 extends Component {
   componentWillMount() {
     document.title = "There are 2 files under Persona Folder. ";
@@ -22,7 +24,8 @@ class StudyMaterialPage2 extends Component {
   };
   render() {
     return (
-      <Container className="contentContainer">
+      <Container className="contentContainerSm">
+        <HelpComponent />
         {this.state.openFile ? <Redirect to="/study-material/file" /> : null}
         <BreadcrumbComponent />
         <div id="file-list-div">
@@ -32,7 +35,7 @@ class StudyMaterialPage2 extends Component {
                 <th>Name</th>
                 <th>Last Modified</th>
                 <th>Type</th>
-                <th>Count</th>
+                <th>Files</th>
               </tr>
             </thead>
             <tbody>
@@ -42,16 +45,16 @@ class StudyMaterialPage2 extends Component {
                   &nbsp; <Button  tabindex="0" aria-label="Persona Template.pdf" class= "smListButton" id="bootstrap-overrides"> Persona Template</Button>
                 </td>
                 <td>10-12-2020 12:22</td>
-                <td>File</td>
+                <td>pdf</td>
                 <td>2</td>
               </tr>
               <tr tabindex="0" aria-label="Persona tips.pdf">
                 <td>
-                  <DescriptionOutlinedIcon />
-                  &nbsp;Persona Tips and Tricks
+                  <CropOriginalIcon />
+                  &nbsp;<Button class= "smListButton" id="bootstrap-overrides"> Market analysis for Design thinking</Button>
                 </td>
                 <td>08-12-2020 14:15</td>
-                <td>File</td>
+                <td>image</td>
                 <td>2</td>
               </tr>
             </tbody>

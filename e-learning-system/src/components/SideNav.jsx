@@ -18,19 +18,19 @@ class SideNav extends Component {
             &nbsp; Dashboard
           </Nav.Link>
           <Nav.Link tabindex="0" eventKey="link-1" aria-label="Lectures Tab">
-            <VideoLibraryIcon className="theme-red-icon" />
+            <VideoLibraryIcon className="theme-red-icon linkActive" />
             &nbsp; Lectures
           </Nav.Link>
           <Nav.Link tabindex="0" href="/study-material" eventKey="link-2" aria-label="Study Material Tab">
-            <MenuBookIcon className="theme-red-icon" />
+            <MenuBookIcon className="theme-red-icon linkActive" />
             &nbsp; Study Materials
           </Nav.Link>
           <Nav.Link tabindex="0" eventKey="link-1" aria-label="Assignments Tabs">
-            <AssignmentIcon className="theme-red-icon" />
+            <AssignmentIcon className="theme-red-icon linkActive" />
             &nbsp; Assignments
           </Nav.Link>
           <Nav.Link tabindex="0" eventKey="link-2" aria-label="Exam Tab">
-            <ReceiptIcon className="theme-red-icon" />
+            <ReceiptIcon className="theme-red-icon linkActive" />
             &nbsp; Exams
           </Nav.Link>
         </Nav>

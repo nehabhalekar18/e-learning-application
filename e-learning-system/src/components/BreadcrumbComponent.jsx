@@ -12,12 +12,12 @@ class BreadcrumbComponent extends Component {
             <h6 className="pageTitle">UI/UX Implementation</h6>
           </Link>
         </Col>
-        <Col xs={1}>
+        <Col xs={1} >
           <ArrowForwardIosIcon />
         </Col>
-        <Col xs={1}>
-          <h4 className="pageTitle"> Persona</h4>
-          <small>2 Files</small>
+        <Col xs={3}>
+          <h3 class="pageTitle1"> Desing Thinking</h3>
+          <label class="subCount">2 files</label>
         </Col>
       </Row>
     );

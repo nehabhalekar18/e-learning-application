@@ -1,14 +1,18 @@
 #side-nav {
   min-height: 89.8vh;
-  max-height: 100vh;
+  height: 91vh;
+  max-height: 110vh;
   width: 208px;
   padding: 0;
+  margin-right: 20%;
+  margin-left: 0%;
 }
 .nav-link:active,
 .nav-link:focus,
 .theme-red-icon:active,
 .theme-red-icon:focus,
-.nav-link:hover {
+.nav-link:hover,
+.linkActive:active {
   color: blue !important;
   font-weight: bold;
   background-color: white;
@@ -16,7 +20,7 @@
 }
 .nav-link:hover > .MuiSvgIcon-root,
 .nav-link:focus > .MuiSvgIcon-root {
-  color:blue !important;
+  color: blue !important;
   background-color: transparent;
 }
 .nav-link {

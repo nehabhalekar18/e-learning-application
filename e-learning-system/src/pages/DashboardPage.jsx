@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import SearchBar from "../components/SearchBar";
-import HelpComponent from "../components/HelpComponent";
+import HelpDash from "../components/HelpDash";
 import "../styles/DashboardPage.css";
 import "../styles/style.css";
 class DashboardPage extends Component {
@@ -24,9 +24,9 @@ class DashboardPage extends Component {
     return (
       <Fragment>
         <SearchBar />
-        
+       <HelpDash/>
         <Container className="contentContainer">
-          <HelpComponent />
+      
           {this.state.redirect ? (
             <Redirect to="/study-material"></Redirect>
           ) : null}
@@ -39,7 +39,8 @@ class DashboardPage extends Component {
               >
                 Dashboard
               </h4>
-              <small>5 Subject</small>
+           
+              <label class="subCount">5 Subject</label>
             </Col>
           </Row>
           <br />
@@ -55,7 +56,7 @@ class DashboardPage extends Component {
                 <Card.Body>
                   <Card.Title>UI/UX Implementation</Card.Title>
                   <Card.Text>
-                    <small>Updated on 06-12-2020 15:25</small>
+                    <p class="updateTime">Updated on 06-12-2020 15:25</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -69,7 +70,7 @@ class DashboardPage extends Component {
                 <Card.Body>
                   <Card.Title>Information Systems</Card.Title>
                   <Card.Text>
-                    <small>Updated on 06-12-2020 15:25</small>
+                  <p class="updateTime">Updated on 06-12-2020 15:25</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -83,7 +84,7 @@ class DashboardPage extends Component {
                 <Card.Body>
                   <Card.Title>Usability Testing</Card.Title>
                   <Card.Text>
-                    <small>Updated on 06-12-2020 15:25</small>
+                  <p class="updateTime">Updated on 06-12-2020 15:25</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -100,7 +101,7 @@ class DashboardPage extends Component {
                 <Card.Body>
                   <Card.Title>Network Security</Card.Title>
                   <Card.Text>
-                    <small>Updated on 06-12-2020 15:25</small>
+                  <p class="updateTime">Updated on 06-12-2020 15:25</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -114,7 +115,7 @@ class DashboardPage extends Component {
                 <Card.Body>
                   <Card.Title>Advance Database</Card.Title>
                   <Card.Text>
-                    <small>Updated on 06-12-2020 15:25</small>
+                  <p class="updateTime">Updated on 06-12-2020 15:25</p>
                   </Card.Text>
                 </Card.Body>
               </Card>
