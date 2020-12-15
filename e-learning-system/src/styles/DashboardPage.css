@@ -1,5 +1,6 @@
 .subjectCard {
   text-align: center;
+  border: 1px solid #8f8f8f !important;
 }
 .subjectCard > .card-body {
   padding: 18% 0;
@@ -7,15 +8,30 @@
 .subjectCard:hover {
   cursor: pointer;
   transform: scale(1.05, 1.05);
-  color: blue;
+  color: #0000cc;
 }
 
 .pageTitle {
-  color: blue;
+  color: #0000cc;
 }
 @media (min-width: 700px) {
   .contentContainer {
     max-width: 690px;
     min-width: 690px;
   }
+}
+
+.subCount {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: -5px;
+  margin-top: 1px;
+}
+
+.updateTime {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Card {
 }

@@ -8,6 +8,7 @@ import Dashboard from "./pages/DashboardPage";
 import StudyMaterial from "./pages/StudyMaterialPage";
 import StudyMaterial2 from "./pages/StudyMaterialPage2";
 import StudyMaterialFilePage from "./pages/StudyMaterialFilePage";
+import StudyMaterialImage from "./pages/StudyMaterialImage";
 class Routes extends Component {
   render() {
     return (
@@ -31,6 +32,11 @@ class Routes extends Component {
               exact
               path="/study-material/file"
               render={(props) => <StudyMaterialFilePage {...props} />}
+            ></Route>
+             <Route
+              exact
+              path="/study-material/image"
+              render={(props) => <StudyMaterialImage />}
             ></Route>
           </LayoutComponent>
         </Switch>

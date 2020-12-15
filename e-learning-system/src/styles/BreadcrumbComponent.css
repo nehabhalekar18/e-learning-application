@@ -1,7 +1,16 @@
-#breadcrumb-row > [class^="col-"]{
-    max-width:fit-content;
-    padding:0px 5px;
+#breadcrumb-row > [class^="col-"] {
+  max-width: fit-content;
+  padding: 0px 5px;
 }
-#breadcrumb-row > [class^="col-"] > a{
-    color: #000000;
+#breadcrumb-row > [class^="col-"] > a {
+  color: #000000;
+}
+.pageTitle1 {
+  font-size: 22px !important;
+  color: #0000cc;
+  margin-bottom: 0.3rem !important;
+}
+
+.pageTitle {
+  color: #0000cc;
 }

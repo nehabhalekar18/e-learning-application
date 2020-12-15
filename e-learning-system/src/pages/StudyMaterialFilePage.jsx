@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import { Breadcrumb, Col, Container, Row } from "react-bootstrap";
 import {Link} from 'react-router-dom';
-import BreadcrumbComponent from "../components/BreadcrumbComponent"
+import BreadcrumbPdf from "../components/BreadcrumbPdf"
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import "../styles/style.css";
 import "../styles/StudyMaterialFilePage.css";
+import HelpComponent from "../components/HelpComponent";
 class StudyMaterialFilePage extends Component {
   render() {
     return (
-      <Container className="contentContainer" id="file-page-container">
-        <BreadcrumbComponent/>
+      <Container className="contentContainerSm" id="file-page-container">
+           <HelpComponent />
+            <BreadcrumbPdf />
         <br/>
         <Row>
           <Col xs={{ span: 8, offset: 2 }}>
@@ -20,8 +22,8 @@ class StudyMaterialFilePage extends Component {
             </div>
           </Col>
             <Col xs={2} style={{paddingTop:'18%'}}>
-                <Link to='/study-material'>
-                  <span style={{display:'inline-flex'}}>  Usecase Scenario.pdf <ArrowForwardIosIcon/></span>
+                <Link to='/study-material/image'>
+                  <span style={{display:'inline-flex'}}> Market analysis.jpg <ArrowForwardIosIcon className ="arrowIcn"/></span>
                 </Link>
             </Col>
         </Row>
