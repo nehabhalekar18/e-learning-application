@@ -4,3 +4,9 @@ export const setZoom = (value) => (dispatch) => {
       payload: value,
     });
   };
+  export const getNav = (value) => (dispatch) => {
+    dispatch({
+      type: "NAV_ACTIVE",
+      payload: value,
+    });
+  };

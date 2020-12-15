@@ -1,4 +1,5 @@
-#study-material-table > tbody > tr:hover {
+#study-material-table > tbody > tr:hover,
+#study-material-table > tbody > tr > td > .btn:hover {
   cursor: pointer;
   transform: scale(1.01, 1.01);
   color: #0000cc;
@@ -9,7 +10,9 @@
   background-color: #fff;
   border-color: #fff;
 }
-
+#study-material-table > thead > tr > th {
+  border-top: none;
+}
 .contentContainerSm {
   width: 100% !important;
   padding-right: 0px !important;

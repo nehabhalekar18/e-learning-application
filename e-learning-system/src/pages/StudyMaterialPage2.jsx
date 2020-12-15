@@ -41,16 +41,16 @@ class StudyMaterialPage2 extends Component {
               <tr onClick={this.openFile}>
                 <td>
                   <DescriptionOutlinedIcon />
-                  &nbsp; <Button  tabindex="0" aria-label="Persona Template.pdf" class= "smListButton" id="bootstrap-overrides"> Persona Template</Button>
+                  &nbsp; <Button  tabIndex="0" aria-label="Persona Template.pdf" className= "smListButton" id="bootstrap-overrides"> Persona Template</Button>
                 </td>
                 <td>10-12-2020 12:22</td>
                 <td>pdf</td>
                 <td>2</td>
               </tr>
-              <tr tabindex="0" aria-label="Persona tips.pdf">
+              <tr tabIndex="0" aria-label="Persona tips.pdf">
                 <td>
                   <CropOriginalIcon />
-                  &nbsp;<Button class= "smListButton" id="bootstrap-overrides"> Market analysis for Design thinking</Button>
+                  &nbsp;<Button className= "smListButton" id="bootstrap-overrides"> Market analysis for Design thinking</Button>
                 </td>
                 <td>08-12-2020 14:15</td>
                 <td>image</td>

@@ -4,6 +4,10 @@ export default (state = {}, action) => {
         return {
           zoomValue: action.payload,
         };
+        case "NAV_ACTIVE":
+          return {
+            navActive: action.payload,
+          };
       default:
         return state;
     }

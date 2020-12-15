@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LayoutComponent from "./components/LayoutComponent";
-import LayoutDashboard from "./components/LayoutDashboard";
+import Dashboard from "./pages/DashboardPage";
 import HomePage from "./pages/HomePage";
 import Login from "./pages/LoginPage";
-import Dashboard from "./pages/DashboardPage";
-import StudyMaterial from "./pages/StudyMaterialPage";
-import StudyMaterial2 from "./pages/StudyMaterialPage2";
 import StudyMaterialFilePage from "./pages/StudyMaterialFilePage";
 import StudyMaterialImage from "./pages/StudyMaterialImage";
+import StudyMaterial from "./pages/StudyMaterialPage";
+import StudyMaterial2 from "./pages/StudyMaterialPage2";
 class Routes extends Component {
   render() {
     return (

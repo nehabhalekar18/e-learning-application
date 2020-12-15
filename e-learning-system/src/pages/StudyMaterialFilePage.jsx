@@ -1,13 +1,12 @@
-import React, { Component } from "react";
-import { Breadcrumb, Col, Container, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import {Link} from 'react-router-dom';
-import BreadcrumbPdf from "../components/BreadcrumbPdf"
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-import "../styles/style.css";
-import "../styles/StudyMaterialFilePage.css";
+import React, { Component } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+import BreadcrumbPdf from "../components/BreadcrumbPdf";
 import HelpComponent from "../components/HelpComponent";
+import "../styles/StudyMaterialFilePage.css";
+import "../styles/style.css";
 class StudyMaterialFilePage extends Component {
   constructor(props) {
     super(props);
@@ -25,15 +24,15 @@ class StudyMaterialFilePage extends Component {
           <Col xs={{ span: 8, offset: 2 }}>
             <div
               id="file-data-div"
-              tabindex="0"
+              tabIndex="0"
               className={
-                this.props.value == "125"
+                this.props.value === "125"
                   ? "zoom-125"
-                  : this.props.value == "150"
+                  : this.props.value === "150"
                   ? "zoom-150"
-                  : this.props.value == "175"
+                  : this.props.value === "175"
                   ? "zoom-175"
-                  : this.props.value == "200"
+                  : this.props.value === "200"
                   ? "zoom-200"
                   : null
               }
@@ -72,7 +71,7 @@ class StudyMaterialFilePage extends Component {
           </Col>
             <Col xs={2} style={{paddingTop:'18%'}}>
                 <Link to='/study-material/image'>
-                  <span style={{display:'inline-flex'}}> Market analysis.jpg <ArrowForwardIosIcon className ="arrowIcn"/></span>
+                  <span style={{display:'inline-flex',color:"#000000",textDecoration:'none'}}> Market analysis.jpg <ArrowForwardIosIcon className ="arrowIcn"/></span>
                 </Link>
             </Col>
         </Row>
