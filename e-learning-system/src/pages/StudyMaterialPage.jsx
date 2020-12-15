@@ -19,7 +19,6 @@ class StudyMaterial extends Component {
     this.openFile = this.openFile.bind(this);
   }
   openFile = (e) => {
-    console.log(e);
     this.setState({ openFile: true });
   };
   render() {

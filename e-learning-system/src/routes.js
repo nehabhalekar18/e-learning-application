@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LayoutComponent from "./components/LayoutComponent";
-import LayoutDashboard from "./components/LayoutDashboard"
+import LayoutDashboard from "./components/LayoutDashboard";
 import HomePage from "./pages/HomePage";
 import Login from "./pages/LoginPage";
 import Dashboard from "./pages/DashboardPage";
@@ -20,17 +20,21 @@ class Routes extends Component {
             <Route
               exact
               path="/study-material"
-              render={(props) => <StudyMaterial />}
+              render={(props) => <StudyMaterial {...props} />}
             ></Route>
             <Route
               exact
               path="/study-material/sub"
-              render={(props) => <StudyMaterial2 />}
+              render={(props) => <StudyMaterial2 {...props} />}
             ></Route>
             <Route
               exact
               path="/study-material/file"
-              render={(props) => <StudyMaterialFilePage {...props} />}
+              render={(props) => (
+                <StudyMaterialFilePage
+                  {...props}
+                />
+              )}
             ></Route>
           </LayoutComponent>
         </Switch>

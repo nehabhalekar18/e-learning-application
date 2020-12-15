@@ -3,11 +3,11 @@ import { Col, Row } from "react-bootstrap";
 import SearchBar from "./SearchBar";
 import SideNav from "./SideNav";
 import HelpComponent from "../components/HelpComponent";
-class LayoutComponent extends Component {
+class LayoutComponent extends Component { 
   render() {
     return (
       <Fragment>
-        <SearchBar />
+        <SearchBar/>
         <Row>
           <Col xs={2}>
             <SideNav />
