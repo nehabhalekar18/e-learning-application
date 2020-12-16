@@ -6,12 +6,16 @@
   padding: 0;
   margin-right: 20%;
   margin-left: 0%;
+  margin-top: 1px;
 }
-.nav-link{
-  color: #ffffff
+.nav-link {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
-.nav-link:hover, .nav-link:hover > .MuiSvgIcon-root, .active{
-  color: blue ;
+.nav-link:hover,
+.nav-link:hover > .MuiSvgIcon-root,
+.active {
+  color: blue;
   font-weight: bold;
   background-color: white;
   border-bottom: 2px solid #ffffff;

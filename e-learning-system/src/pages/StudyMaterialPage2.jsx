@@ -34,7 +34,7 @@ class StudyMaterialPage2 extends Component {
                 <th>Name</th>
                 <th>Last Modified</th>
                 <th>Type</th>
-                <th>Files</th>
+                
               </tr>
             </thead>
             <tbody>
@@ -45,7 +45,7 @@ class StudyMaterialPage2 extends Component {
                 </td>
                 <td>10-12-2020 12:22</td>
                 <td>pdf</td>
-                <td>2</td>
+                
               </tr>
               <tr tabIndex="0" aria-label="Persona tips.pdf">
                 <td>
@@ -54,7 +54,7 @@ class StudyMaterialPage2 extends Component {
                 </td>
                 <td>08-12-2020 14:15</td>
                 <td>image</td>
-                <td>2</td>
+             
               </tr>
             </tbody>
           </Table>
