@@ -1,3 +1,21 @@
+#file-page-container{    
+    height: 100%;
+}
+.zoom-125{
+    font-size: 1.2rem;
+}
+.zoom-150{
+    font-size: 1.4rem;
+}
+.zoom-175{
+    font-size: 1.6rem;
+}
+.zoom-200{
+    font-size: 1.8rem;
+}
+.zoom-100{
+  font-size: 17px; 
+}
 #file-page-container {
   height: 100%;
 }
@@ -6,13 +24,15 @@
   padding: 5%;
   height: 499px;
   overflow-x: auto;
-  font-size: 17px;
 }
-
 .personaImg {
   margin-left: -3px;
   margin-top: 10% !important;
 }
 .arrowIcn {
   padding-top: 20px !;
+}
+#file-page-container > .row > .col-2> a:hover,#file-page-container > .row > .col-2> a{
+  color:black !important;
+  text-decoration: none !important;
 }

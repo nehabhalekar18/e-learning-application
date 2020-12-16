@@ -1,14 +1,11 @@
-import MicOffIcon from "@material-ui/icons/MicOff";
-import HeadsetIcon from '@material-ui/icons/Headset';
 import NavigateNextIcon from "@material-ui/icons/NavigateNext";
 import React, { Component } from "react";
-import { Col, Container, Form, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "../styles/HomePage.css";
-import home from '../assets/home.jpg';
-import brand from '../assets/brand.png';
 import brand1 from '../assets/brand1.png';
+import home from '../assets/home.jpg';
 import screenreader1 from '../assets/screenreader1.png';
+import "../styles/HomePage.css";
 class HomePage extends Component {
   componentWillMount() {
     document.title = "Welcome to V-learn, for better accessibility we've turned on your screen reader. you can turn it off by Pressing tab key.";
@@ -19,26 +16,26 @@ class HomePage extends Component {
   render() {
     return (
       <Container id="home-page-container">
-        <Row class="containerRow">
+        <Row className="containerRow">
           <Col xs={4} id="left-section">
             <Row className="brandRow">
             {/* <img src={brand}  class="brand" /> */}
             </Row>
               <Row className="imgRow">
-              <img src={home} class="img-fluid" />
+              <img alt="" src={home} className="img-fluid" />
               </Row>
           </Col>
          
           <Col xs={8} style={{ textAlign: "center" }}>
         
             <div id="home-page-heading">
-            <img src={brand1}  class="brand" /> 
+            <img alt="" src={brand1}  className="brand" /> 
             <br></br>
               <i>Your better future is here</i>
             </div>
             <div id="home-page-mic">
             
-              <img src={screenreader1} className="sr" />
+              <img alt="" src={screenreader1} className="sr" />
               <h6 className="turnOff">TURN OFF SCREEN READER</h6>
              
              

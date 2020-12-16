@@ -18,7 +18,7 @@ class BreadcrumbPdf extends Component {
           </Col>
           <Col xs={3}>
           <Link to="/study-material/sub">
-          <h6 class="pageTitle"> Design Thinking</h6>
+          <h6 className="pageTitle"> Design Thinking</h6>
             </Link>
       
          
@@ -27,7 +27,7 @@ class BreadcrumbPdf extends Component {
             <ArrowForwardIosIcon />
           </Col>
           <Col xs={3}>
-            <h3 class="pageTitle1"> Persona Template.pdf</h3>
+            <h3 className="pageTitle1"> Persona Template.pdf</h3>
             
           </Col>
         </Row>

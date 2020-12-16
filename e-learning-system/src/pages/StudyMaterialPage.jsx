@@ -1,11 +1,10 @@
+import FolderOpenIcon from "@material-ui/icons/FolderOpen";
 import React, { Component } from "react";
 import { Button, Col, Container, Row, Table } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
-import DescriptionOutlinedIcon from "@material-ui/icons/DescriptionOutlined";
-import FolderOpenIcon from "@material-ui/icons/FolderOpen";
+import HelpComponent from "../components/HelpComponent";
 import "../styles/StudyMaterialPage.css";
 import "../styles/style.css";
-import HelpComponent from "../components/HelpComponent";
 class StudyMaterial extends Component {
   componentWillMount() {
     document.title =
@@ -19,7 +18,6 @@ class StudyMaterial extends Component {
     this.openFile = this.openFile.bind(this);
   }
   openFile = (e) => {
-    console.log(e);
     this.setState({ openFile: true });
   };
   render() {
@@ -30,7 +28,7 @@ class StudyMaterial extends Component {
         <Row>
           <Col xs={12}>
             <h4 className="pageTitle">UI/UX Implementation</h4>
-            <label class="subCount">3 files </label>
+            <label className="subCount">3 files </label>
           </Col>
         </Row>
         <Row>
@@ -51,8 +49,8 @@ class StudyMaterial extends Component {
                   <FolderOpenIcon />
                   &nbsp;
                   <Button
-                    class="btnSub"
-                    tabindex="0"
+                    className="btnSub"
+                    tabIndex="0"
                     aria-label="Design Thinking folder"
                     id="bootstrap-overrides"
                   >
@@ -63,20 +61,20 @@ class StudyMaterial extends Component {
                 <td>Folder</td>
                 <td>2</td>
               </tr>
-              <tr tabindex="0" aria-label="Persona folder">
+              <tr tabIndex="0" aria-label="Persona folder">
                 <td>
                   <FolderOpenIcon />
-                  &nbsp;  <Button  class="btnSub" id="bootstrap-overrides"
+                  &nbsp;  <Button  className="btnSub" id="bootstrap-overrides"
                   >Persona </Button>
                 </td>
                 <td>08-12-2020 14:15</td>
                 <td>Folder</td>
                 <td>2</td>
               </tr>
-              <tr tabindex="0" aria-label="Ideate folder">
+              <tr tabIndex="0" aria-label="Ideate folder">
                 <td>
                   <FolderOpenIcon />
-                  &nbsp; <Button  class="btnSub" id="bootstrap-overrides"
+                  &nbsp; <Button  className="btnSub" id="bootstrap-overrides"
                   > Ideate</Button>
                 </td>
                 <td>06-12-2020 18:06</td>

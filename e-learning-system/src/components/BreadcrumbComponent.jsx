@@ -16,8 +16,8 @@ class BreadcrumbComponent extends Component {
           <ArrowForwardIosIcon />
         </Col>
         <Col xs={3}>
-          <h3 class="pageTitle1"> Desing Thinking</h3>
-          <label class="subCount">2 files</label>
+          <h3 className="pageTitle1"> Desing Thinking</h3>
+          <label className="subCount">2 files</label>
         </Col>
       </Row>
     );

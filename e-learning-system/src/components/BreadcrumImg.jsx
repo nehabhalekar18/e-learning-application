@@ -18,7 +18,7 @@ class BreadcrumImg extends Component {
           </Col>
           <Col xs={3}>
           <Link to="/study-material/sub">
-          <h6 class="pageTitle"> Design Thinking</h6>
+          <h6 className="pageTitle"> Design Thinking</h6>
             </Link>
       
          
@@ -27,7 +27,7 @@ class BreadcrumImg extends Component {
             <ArrowForwardIosIcon />
           </Col>
           <Col xs={3}>
-            <h3 class="pageTitle1"> Market Analysis Image</h3>
+            <h3 className="pageTitle1"> Market Analysis Image</h3>
             
           </Col>
         </Row>

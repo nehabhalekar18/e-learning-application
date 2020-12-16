@@ -1,23 +1,20 @@
-import React, { Component } from "react";
-import {
-  Col,
-  Container,
-  Form,
-  FormControl,
-  InputGroup,
-  Row,
-  Button,
-} from "react-bootstrap";
-import { Link } from "react-router-dom";
+import Checkbox from "@material-ui/core/Checkbox";
 import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import VisibilityOffOutlinedIcon from "@material-ui/icons/VisibilityOffOutlined";
+import React, { Component } from "react";
+import {
+  Button,
+  Col,
+  Container,
+  FormControl,
+  InputGroup,
+  Row,
+} from "react-bootstrap";
+import brand from "../assets/brand.png";
+import login from "../assets/login.png";
 import "../styles/LoginPage.css";
 import "../styles/style.css";
-import Checkbox from "@material-ui/core/Checkbox";
-import login from '../assets/login.png';
-import brand from '../assets/brand.png';
-import { Redirect } from "react-router-dom";
 class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -82,10 +79,11 @@ class HomePage extends Component {
       <Container id="home-page-container" className="container-fluid">
         <Row>
           <Col xs={4} style={{ textAlign: "center" }} id="left-section">
-          <img src={login} className="imgLogin" />
-          <br></br>
-          <img src={brand} className="brandRow1" /><br></br>
-          <i style={{ color: "white" }}>Your better future is here</i>
+            <img alt="" src={login} className="imgLogin" />
+            <br></br>
+            <img alt="" src={brand} className="brandRow1" />
+            <br></br>
+            <i style={{ color: "white" }}>Your better future is here</i>
           </Col>
           <Col xs={8}>
             <div id="home-page-heading">
@@ -93,7 +91,7 @@ class HomePage extends Component {
               <i>with your university credentials</i>
             </div>
             <div id="login-div">
-                <Row>
+              <Row>
                 <Col xs={12}>
                   <label htmlFor="email">Email</label>
                   <InputGroup
@@ -157,7 +155,7 @@ class HomePage extends Component {
                     Please enter a value
                   </small>
                 </Col>
-               
+
                 <Col xs={12} className="submitCol">
                   <Button onClick={this.handleSubmit}>Submit</Button>
                 </Col>
@@ -171,9 +169,6 @@ class HomePage extends Component {
                   Forgot Password?
                 </Col>
               </Row>
-               
-              
-              
             </div>
           </Col>
         </Row>

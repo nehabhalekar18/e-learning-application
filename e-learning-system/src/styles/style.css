@@ -13,7 +13,7 @@ body {
   border: none !important;
 }
 a {
-  color: #000000 !important;
+  color: #000000 /* !important */;
 }
 .pageTitle {
   margin: 0px;
