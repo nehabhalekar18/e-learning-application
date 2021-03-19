@@ -1,7 +1,6 @@
 # E-Learning Web Application
 
-This project is developed s a part of curriculum for the course of UX Design and Implementation.
-The application is designed considering the visually imparied students and to meet their needs from the user interface perspective.
+This project is developed s a part of the curriculum for the course of UX Design and Implementation course. The application is designed to consider visually impaired students and to meet their needs from the user interface perspective.
 
 ## Contributors
 
